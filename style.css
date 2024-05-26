@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: animate 20s infinite;
+}
+@keyframes animate{
+    20%{
+        background: url(./images/img2.jpg);
+        background-size:cover;
+        background-position:center ;
+    }
+    35%{
+        background: url(./images/img3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    55%{
+        background: url(./images/img4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    80%{
+        background: url(./images/mclaren-1.jpg);
+        background-size: cover;
+        background-position: center;
+
+    } 
+    100%{
+        background: url(./images/mclaren-4.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+.container{
+    position: absolute;
+    background: rgba(68, 67, 67, 0.036);
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 4px 30px rgba(173, 169, 169, 0);
+    backdrop-filter: blur(4px);
+    filter: drop-shadow(0 0 0.5rem #1797ff);
+    left:50%;
+    top:50%;
+    transform: translate(-50% ,-50%);
+}
+#conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#conatiner input{
+    top:10px;
+    font-size: 2rem;
+    border-color:#18d724;
+    border-radius: 20px;
+    background:transparent;
+    position: absolute;
+}
+#conatiner input::placeholder{
+    color: #1be171;
+    opacity: 1;
+}
+#conatiner button{
+    font-size: 1.4rem;
+    background: #1E90FF;
+    border-radius: 10px;
+}
+#conatiner button:hover {
+    font-size: 1.4rem;
+    background: #12f7ff;
+    border-radius: 10px;
+    cursor: pointer;
+}
